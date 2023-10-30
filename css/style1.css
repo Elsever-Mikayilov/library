@@ -1,0 +1,39 @@
+
+.mod-con {
+	width:600px;
+	margin:0 auto
+}
+.slide-box
+{
+    padding: 0px;
+    height: 310px;
+    float: left;
+    
+}
+.slide-player {
+	width:202px;
+	height:226px;
+    top: 0px;
+    margin-left: 6px;
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+.slide-player li
+{
+    width: 643px;
+    height: 310px;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.slide-player li.selected {
+	display:block
+}
+.slide-menu {
+	height:43px;
+	
+	
+}
+
+/*Homepage style*/
+

@@ -1,0 +1,106 @@
+.arrowlistmenu
+{
+    width: 200px;
+}
+a { outline: none; }
+
+h1
+{
+    color: #FFFFFF;
+    padding: 5px 0 3px 10px;
+    min-height: 20px;
+    position: relative;
+    font-family: Calibri;
+    display: block;
+    line-height: 15px;
+    
+}
+.menushka 
+{
+    display: none;
+}
+
+h1:hover
+{
+    background-color: #6EB9FF;
+}
+
+.arrowlistmenu .menuheader
+{
+    /*CSS class for menu headers in general (expanding or not!)*/
+    font-family: Segoe UI;
+    font-size: 13px;
+    font-weight: lighter;
+    color: white; /*bottom spacing between header and rest of content*/
+    text-transform: none;
+    padding: 7px 0 7px 10px; /*header text is indented 10px*/
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #0d8aff;
+}
+
+.arrowlistmenu .menuheader:hover 
+{
+    background-color: #053c94;
+}
+
+.arrowlistmenu .openheader
+{
+    /*CSS class to apply to expandable header when it's expanded*/
+    border-style: dotted;
+    border-width: 1px;
+    margin: 0x 0px 0px 0px;
+    background-image: url(http://lib.ndu.edu.az/css/titlebar-active.png);
+    background-color: #9E876E;
+    color: #800000;
+}
+
+.arrowlistmenu ul
+{
+    /*CSS for UL of each sub menu*/
+    margin: 8px;
+    list-style-type: none;
+    padding: 1px;
+    background-color: #9E876E;
+    font-family: 'Arial Narrow';
+    font-size: 14px;
+    text-decoration: none;
+    color: #800000;
+}
+
+.arrowlistmenu ul li
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.arrowlistmenu ul li a
+{
+    color: #800000;
+    background: url(http://lib.ndu.edu.az/css/arrowbullet.png) no-repeat center left; /*custom bullet list image*/
+    display: block;
+    padding: 2px 0;
+    padding-left: 19px; /*link text is indented 19px*/
+    text-decoration: none;
+    border-bottom: 1px solid #dadada;
+    font-size: 12%;
+    font-family: 'Arial Narrow';
+}
+
+.arrowlistmenu ul li a:visited{
+color: #A70303;
+}
+
+
+
+.arrowlistmenu .menuheader:hover
+{
+    /*CSS class for menu headers in general (expanding or not!)*/
+    text-transform: none;
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+

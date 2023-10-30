@@ -1,0 +1,1139 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head id="ctl00_Head1">
+  <meta dir="ltr" />
+  <title>
+    Naxçıvan Dövlət universiteti elektron kitabxana
+  </title>
+  <link href="style/orbit.css" rel="stylesheet" type="text/css" />
+  <script src="../js/jquery-1.4.1.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.orbit.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(window).load(function () {
+      $('#featured').orbit({
+        'bullets': false,
+        'timer': true,
+        'animation': 'fade'
+      });
+    });
+  </script>
+
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+  <link href="style/base.css" rel="stylesheet" type="text/css" />
+  <link href="style/tools.css" rel="stylesheet" type="text/css" />
+  <link href="style/engine.css" rel="stylesheet" type="text/css" />
+  <script src="js/tabcontent.js" type="text/javascript"></script>
+  <script src="js/dropdowntabs.js" type="text/javascript"></script>
+  <script src="js/simpletreemenu.js" type="text/javascript"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="engine1/style.html" rel="stylesheet" type="text/css" />
+  <link href="css/still.css" rel="stylesheet" type="text/css" />
+  <link href="css/style1.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+  <script src="js/common.js" type="text/javascript"></script>
+  <!-- Orbit Start -->
+  <!-- Attach our CSS -->
+
+
+
+
+  <style type="text/css">
+    .style2 {
+
+      width: 43px;
+    }
+
+    .style7 {
+      width: 101%;
+    }
+
+    .style8 {
+      width: 101px;
+    }
+
+    .style9 {
+      width: 30px;
+    }
+
+    .style10 {
+      font-weight: 700;
+      color: rgb(70, 88, 90);
+      width: 641px;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      overflow-x: hidden;
+      background: #fed5c8;
+    }
+
+    .list {
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    .list li {
+      list-style-type: none;
+
+      width: 200px;
+      height: 200px;
+      opacity: .25;
+      position: absolute;
+      left: 50%;
+      margin-left: -100px;
+      border-radius: 2px;
+      background: #9C89B8;
+      transition: transform 1s, opacity 1s;
+    }
+
+    .list .act {
+      opacity: 1;
+    }
+
+    .list .prev,
+    .list .next {
+      cursor: pointer;
+    }
+
+    .list .prev {
+      transform: translateX(-220px) scale(.85);
+    }
+
+    .list .next {
+      transform: translateX(220px) scale(.85);
+    }
+
+    .list .hide {
+      transform: translateX(-420px) scale(.85);
+    }
+
+    .list .new-next {
+      transform: translateX(420px) scale(.85);
+    }
+
+    .list .hide,
+    .list .new-next {
+      opacity: 0;
+      transition: opacity .5s, transform .5s;
+    }
+
+    .swipe {
+      width: 270px;
+      height: 200px;
+      position: absolute;
+      background-color: green;
+      border-radius: 2px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+
+    /* karusel */
+  </style>
+
+</head>
+
+<body class="pagebg">
+
+
+  <form name="aspnetForm" method="post" action="http://lib.ndu.edu.az/Az/Default2.aspx" id="aspnetForm">
+    <div>
+      <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+      <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+        value="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IGlxdGlzYWRpIMmZbGFxyZlsyZlyaW4gaMO8cXVxaSB0yZluemltbMmZbm3JmXNpAAUyMjkwM2QCBQ9kFgJmDxUGBTIyOTEzDsaPbGl5ZXYgxLBsaGFtBTIyOTEzLk5heMOnxLF2YW4gYsO2bGfJmXNpIHPJmWbJmXZpbMmZciBkw7Z2csO8bmTJmS4ABTIyOTEzZAIGD2QWAmYPFQYFMjI5MTQOTm92cnV6b3YgWmFsZWgFMjI5MTQtMjAxMC0yMDE4LWNpIGlsbMmZcmTJmSBhcnhlb2xvamkgdGFwxLFudMSxbGFyAAUyMjkxNGQCBw9kFgJmDxUGBTIyOTE1DsaPbGl5ZXYgxLBsaGFtBTIyOTE1d1PJmWbJmXZpLCDGj2bFn2FyLCBSdXNpeWEgdsmZIE9zbWFubMSxIGTDtnZsyZl0aWzJmXJpbmluIEF6yZlyYmF5Y2FuIHNpeWFzyZl0aW5kyZkgTmF4w6fEsXZhbiAoWFZJSUkgyZlzcmluIEkgeWFyxLFzxLEpAAUyMjkxNWQCAw8UKwAjFgIeB1Zpc2libGVoAmQCAQspYFNpdGVVdGlscy5QYWdpbmdNb2RlVHlwZSwgQ29sbGVjdGlvblBhZ2VyLCBWZXJzaW9uPTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbAAFBFBhZ2VlZQIKZwUkY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRkdEtpdGFibGFyBTVQQURESU5HLUJPVFRPTTo0cHg7UEFERElORy1UT1A6NHB4O0ZPTlQtV0VJR0hUOiBib2xkOwUoezJ9IGtpdGFiZGFuIHswfS17MX0gYXJhc8SxIGfDtnN0yZlyaWxpcgspZVNpdGVVdGlscy5SZXN1bHRzTG9jYXRpb25UeXBlLCBDb2xsZWN0aW9uUGFnZXIsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsAmVoBQ1TyZloaWbJmWzJmXI6ZQspaFNpdGVVdGlscy5QYWdlTnVtYmVyc0Rpc3BsYXlUeXBlLCBDb2xsZWN0aW9uUGFnZXIsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsAAUBLWdlCyllU2l0ZVV0aWxzLkJhY2tOZXh0RGlzcGxheVR5cGUsIENvbGxlY3Rpb25QYWdlciwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwACylmU2l0ZVV0aWxzLkJhY2tOZXh0TG9jYXRpb25UeXBlLCBDb2xsZWN0aW9uUGFnZXIsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsAmgFB8KrIEdlcmkFCcSwcsmZbGnCuwUNxLBsayBTyZloaWbJmQUMU29uIFPJmWhpZsmZZWVnAg9nZWVkZFkDkzQZLh9kVvS4tFwzC7NxRll0X57J7iKFlgkLKmtd" />
+    </div>
+
+    <script type="text/javascript">
+      //<![CDATA[
+      var theForm = document.forms['aspnetForm'];
+      if (!theForm) {
+        theForm = document.aspnetForm;
+      }
+      function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+          theForm.__EVENTTARGET.value = eventTarget;
+          theForm.__EVENTARGUMENT.value = eventArgument;
+          theForm.submit();
+        }
+      }
+      //]]>
+    </script>
+
+
+    <script
+      src="http://lib.ndu.edu.az/WebResource.axd?d=JgAXEe8hZ2rCOmlwMKtyWoc8jHn5rIp-qss0gIq7GMvB0uSzxB0CEYZU0MKjDEzw9gPVr2fHI27PUcCQA_tdYyPuAruxYblFXHKBnqyTLt41&amp;t=637959283971076609"
+      type="text/javascript"></script>
+
+
+    <script
+      src="http://lib.ndu.edu.az/ScriptResource.axd?d=XodlzXOgRdtiFxtI4Nisl0hZ6_R6dB9cYXrxBAVLP1JrgT1wR7D00oQPQH2IS3LBjhOYZ__OlKjeNFKsQA0cH67PV0SR8LOzHkTdlsWDwS7f00OY-Z-F7Fy07wm5kIE75ka6I0TxlpJL9KEWqx_4Bs6LwohfEBbqM-4g15B8RafZ_mV5nDWRKFl6yk55O8kG0&amp;t=ffffffffe6d5a9ac"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      if (typeof (Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+      //]]>
+    </script>
+
+    <script
+      src="http://lib.ndu.edu.az/ScriptResource.axd?d=psOSo1pV_DNS6hoKMaUDVKTmKldRSQgNdxQOo3uLn22Qo_qXU4ZcSULtK8YpnFs-HKNgm6oygPvGPEzDd1OnkiVpX6QKAZVqyPhR6dhPMEPIAVwpn4s6mBHppMRyruZrvrC-3GupJ_PELacnm4CGt70roWKOeME92KNumNtY2-TV9HMKm7VL5Cg6xFq2cxtU0&amp;t=ffffffffe6d5a9ac"
+      type="text/javascript"></script>
+    <div>
+
+      <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="812BF150" />
+      <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+        value="/wEdAAR2WScT5RmsHMgPZA+csHAj8zcb6FtYDb5CzxzypEyZHp9UXI7RwI+ukRHnd+AlDZ6BQWWA1TV65wf/VpowxSo+PVn8l02DzAj8GJ4Rfyb7hYgLxhnct3L6x3ppaRgvBwA=" />
+    </div>
+    <div class="pagebg">
+      <div class="wrapper">
+        <div class="tttopppbar">
+
+          <script type="text/javascript">
+            //<![CDATA[
+            Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+            //]]>
+          </script>
+
+
+
+
+
+        </div>
+      </div>
+      <div class="wrapper_content">
+        <div class="tophhhhheader">
+          <div><a href="Default2.html"><img src="bannerIcons/ndu.png" /></a></div>
+        </div>
+        <div class="tophdasdmenu">
+          <div class="dleft">
+            <div class="dright">
+              <div class="lang">
+                <a href="YeniKitablar.html" title="Az&#601;rbaycan"><img width="20" height="14" alt="Az&#601;rbaycan"
+                    src="bannerIcons/az.gif" /></a>
+                <a href="http://lib.ndu.edu.az/En/YeniKitablaren.aspx" title="English"><img width="20" height="14"
+                    alt="English" src="bannerIcons/en.gif" /></a>
+                <a href="http://lib.ndu.edu.az/Ru/YeniKitablarru.aspx"
+                  title="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;">
+                  <img width="20" height="14" alt="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;"
+                    src="bannerIcons/ru.gif" /></a>
+              </div>
+
+              <ul id="topmenu" class="topmenu">
+
+
+                <li><a href="Default2.html" class="mm">Ana s&#601;hif&#601;</a></li>
+                <li><a href="#" rel="kitabxana" class="mm">Kitabxana</a></li>
+                <li><a href="EtrafliAxtaris.html" class="mm">Elektron kataloq</a></li>
+                <li><a href="#" rel="media" class="mm">Media</a></li>
+                <li><a href="BizimleElaqe.aspx" class="mm">Biziml&#601; &#399;laq&#601;</a></li>
+                <li><a href="FaydaliLinkler.aspx" class="mm">Faydalı Linklər</a></li>
+              </ul>
+              <ul id="kitabxana" class="sublinks">
+                <li><a href="Tarix.html">Kitabxana haqqında</a></li>
+                <li><a href="KecirilenTedbirler.html">Keçirilən tədbirlər</a></li>
+                <li><a href="IstifadeQaydalari.html">İstifadə qaydaları</a></li>
+                <li><a href="Xidmetlerimiz.html">Xidmətlər</a></li>
+
+              </ul>
+              <ul id="media" class="sublinks">
+                <li><a href="Audio.html">Audiofayllar</a></li>
+                <li><a href="Video.html">Videolar</a></li>
+                <li><a href="SekilNovleri.html">&#350;&#601;kil qalereyas&#305;</a></li>
+              </ul>
+              <script type="text/javascript">
+
+                tabdropdown.init("topmenu")
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="presentation">
+
+          <div class="slide-box mod-con">
+            <ul class="slide-player">
+
+              <li class="selected"><img src="UniPhoto/2.jpg" /></li>
+              <li><img src="UniPhoto/3.jpg" /></li>
+              <li><img src="UniPhoto/4.jpg" /></li>
+              <li><img src="UniPhoto/5.jpg" /></li>
+              <li><img src="UniPhoto/6.jpg" /></li>
+              <li><img src="UniPhoto/7.jpg" /></li>
+              <li><img src="UniPhoto/8.jpg" /></li>
+              <li><img src="UniPhoto/9.jpg" /></li>
+              <li><img src="UniPhoto/10.jpg" /></li>
+              <li><img src="UniPhoto/11.jpg" /></li>
+              <li><img src="UniPhoto/12.jpg" /></li>
+              <li><img src="UniPhoto/13.jpg" /></li>
+              <li><img src="UniPhoto/14.jpg" /></li>
+              <li><img src="UniPhoto/15.jpg" /></li>
+              <li><img src="UniPhoto/16.jpg" /></li>
+              <li><img src="UniPhoto/17.jpg" /></li>
+            </ul>
+          </div>
+
+          <div class="serencam"></div>
+
+
+        </div>
+
+        <!-- en son elave olunan kitablar  -->
+        <h2 class="kitab-h2" style="text-align: center;">Ən çox oxunan kitablar </h2>
+
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 3</div> -->
+            <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 3</div> -->
+            <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 3</div> -->
+            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <!-- en cox oxunan kitablar end  -->
+
+
+        <div class="speedbar">
+          <div class="katalog">ELEKTRON KİTABLAR</div>
+          <div class="axarish">
+            <input name="ctl00$txtAxtarisSoz" type="text" id="ctl00_txtAxtarisSoz" placeholder="Axtarış sözü" />
+            <input type="submit" name="ctl00$Button1" value="Axtar" id="ctl00_Button1" class="buttonaxtar"
+              style="height:25px;width:58px;" />
+            <a id="ctl00_LinkButton1" class="EtrafliAxtaris"
+              href="javascript:__doPostBack(&#39;ctl00$LinkButton1&#39;,&#39;&#39;)">Ətraflı Axtar</a>
+          </div>
+          <div class="time">
+            <span class="headdate" id='datetime_div'></span>
+            <script src="../js/date.js" type="text/javascript"></script>
+          </div>
+        </div>
+
+
+
+        <div>
+          <div>
+            <div class="mmasdabody_hlost">
+              <div class="topmmasdabody_hlost">
+                <ul class="container">
+                  <li class="centerside">
+                    <div class="menyuozu">
+
+                      <link href="css/yanMenu.css" rel="stylesheet" type="text/css" />
+                      <SCRIPT language="javascript">
+                        function show(id) {
+                          obj = document.getElementById(id);
+                          if (obj.style.display == 'block') {
+                            obj.style.display = 'none'
+                          }
+                          else {
+                            obj.style.display = 'block'
+                          }
+                        }
+                      </SCRIPT>
+
+                      <div class="arrowlistmenu" style="width: 200px; height: auto">
+
+
+                        <a href='javascript:show(1)' style="text-decoration: none">
+                          <h2 class="menuheader expandable">
+                            Təbiət elmləri
+                          </h2>
+                        </a>
+                        <div
+                          style="width: 200px; border-bottom-style: dashed; border-bottom-color: #FFFFFF;  margin-left: 5px; border-bottom-width: 1px; padding-right: 0px; padding-left: 0px; margin-right: 5px;">
+                        </div>
+                        <div id='1' class="menushka">
+
+                          <a href="AltKatKitablarf49a.html?AltKatID=1&amp;KatID=1" class="AltKatAdi">
+                            <h1>İnsan və ətraf mühit</h1>
+                          </a>
+
+                          <a href="AltKatKitablara988.html?AltKatID=2&amp;KatID=1" class="AltKatAdi">
+                            <h1>Fizika-riyaziyyat</h1>
+                          </a>
+
+                          <a href="AltKatKitablar27d4.html?AltKatID=3&amp;KatID=1" class="AltKatAdi">
+                            <h1>Kimya elmləri</h1>
+                          </a>
+
+                          <a href="AltKatKitablara22c.html?AltKatID=4&amp;KatID=1" class="AltKatAdi">
+                            <h1>Yer haqqında elmlər</h1>
+                          </a>
+
+                          <a href="AltKatKitablarc3ab.html?AltKatID=5&amp;KatID=1" class="AltKatAdi">
+                            <h1>Biologiya elmləri</h1>
+                          </a>
+
+                        </div>
+
+
+                        <a href='javascript:show(2)' style="text-decoration: none">
+                          <h2 class="menuheader expandable">
+                            Texnika. Texniki elmlər
+                          </h2>
+                        </a>
+                        <div
+                          style="width: 200px; border-bottom-style: dashed; border-bottom-color: #FFFFFF;  margin-left: 5px; border-bottom-width: 1px; padding-right: 0px; padding-left: 0px; margin-right: 5px;">
+                        </div>
+                        <div id='2' class="menushka">
+
+                          <a href="AltKatKitablar41fd.html?AltKatID=6&amp;KatID=2" class="AltKatAdi">
+                            <h1>Texnika və texniki elmlər bütövlükdə </h1>
+                          </a>
+
+                          <a href="AltKatKitablardf0c.html?AltKatID=7&amp;KatID=2" class="AltKatAdi">
+                            <h1>Energetika</h1>
+                          </a>
+
+                          <a href="AltKatKitablar525e.html?AltKatID=8&amp;KatID=2" class="AltKatAdi">
+                            <h1>Radioelektronika</h1>
+                          </a>
+
+                          <a href="AltKatKitablar7fab.html?AltKatID=9&amp;KatID=2" class="AltKatAdi">
+                            <h1>Dağ-mədən işi</h1>
+                          </a>
+
+                          <a href="AltKatKitablarb75d.html?AltKatID=10&amp;KatID=2" class="AltKatAdi">
+                            <h1>Metallar texnologiyası. Maşınqayırma. Cihazqayırma</h1>
+                          </a>
+
+                          <a href="AltKatKitablar1aa4.html?AltKatID=11&amp;KatID=2" class="AltKatAdi">
+                            <h1>Kimyəvi texnologiya. Kimyəvi istehsal</h1>
+                          </a>
+
+                          <a href="AltKatKitablar2f21.html?AltKatID=12&amp;KatID=2" class="AltKatAdi">
+                            <h1>Yeyinti məhsulları istehsalı</h1>
+                          </a>
+
+                          <a href="AltKatKitablarb6d7.html?AltKatID=13&amp;KatID=2" class="AltKatAdi">
+                            <h1>Ağac texnologiyası. Yüngül sənaye istehsalı. Poliqrafiya istehsalı</h1>
+                          </a>
+
+                          <a href="AltKatKitablar7186.html?AltKatID=14&amp;KatID=2" class="AltKatAdi">
+                            <h1>Tikinti (inşaat)</h1>
+                          </a>
+
+                          <a href="AltKatKitablar31d2.html?AltKatID=15&amp;KatID=2" class="AltKatAdi">
+                            <h1>Nəqliyyat</h1>
+                          </a>
+
+                        </div>
+
+
+                        <a href='javascript:show(3)' style="text-decoration: none">
+                          <h2 class="menuheader expandable">
+                            Kənd və meşə təsərrüfatı
+                          </h2>
+                        </a>
+                        <div
+                          style="width: 200px; border-bottom-style: dashed; border-bottom-color: #FFFFFF;  margin-left: 5px; border-bottom-width: 1px; padding-right: 0px; padding-left: 0px; margin-right: 5px;">
+                        </div>
+                        <div id='3' class="menushka">
+
+                          <a href="AltKatKitablar7d6a.html?AltKatID=16&amp;KatID=3" class="AltKatAdi">
+                            <h1>Kənd təsərrüfatının elmi. Təbii və texniki əsasları </h1>
+                          </a>
+
+                          <a href="AltKatKitablarbd6a.html?AltKatID=17&amp;KatID=3" class="AltKatAdi">
+                            <h1>Bitkiçilik</h1>
+                          </a>
+
+                          <a href="AltKatKitablar2e93.html?AltKatID=18&amp;KatID=3" class="AltKatAdi">
+                            <h1>Meşə təsərrüfatı</h1>
+                          </a>
+
+                          <a href="AltKatKitablar3076.html?AltKatID=19&amp;KatID=3" class="AltKatAdi">
+                            <h1>Bitkilərin mühafizəsi</h1>
+                          </a>
+
+                          <a href="AltKatKitablar3b90.html?AltKatID=20&amp;KatID=3" class="AltKatAdi">
+                            <h1>Heyvandarlıq</h1>
+                          </a>
+
+                          <a href="AltKatKitablarfbb6.html?AltKatID=21&amp;KatID=3" class="AltKatAdi">
+                            <h1>Ovçuluq təsərrüfatı. Balıqçılıq təsərrüfatı</h1>
+                          </a>
+
+                          <a href="AltKatKitablarabc2.html?AltKatID=22&amp;KatID=3" class="AltKatAdi">
+                            <h1>Baytarlıq</h1>
+                          </a>
+
+                        </div>
+
+
+                        <a href='javascript:show(4)' style="text-decoration: none">
+                          <h2 class="menuheader expandable">
+                            Səhiyyə. Tibb elmləri
+                          </h2>
+                        </a>
+                        <div
+                          style="width: 200px; border-bottom-style: dashed; border-bottom-color: #FFFFFF;  margin-left: 5px; border-bottom-width: 1px; padding-right: 0px; padding-left: 0px; margin-right: 5px;">
+                        </div>
+                        <div id='4' class="menushka">
+
+                          <a href="AltKatKitablarcc1f.html?AltKatID=23&amp;KatID=4" class="AltKatAdi">
+                            <h1>İctimai gigiyena və səhiyyənin təşkili. Gigiyena elmləri</h1>
+                          </a>
+
+                          <a href="AltKatKitablar9bb7.html?AltKatID=24&amp;KatID=4" class="AltKatAdi">
+                            <h1>Ümumi patalogiya. Tibbi mikrobiologiya və parazitologiya</h1>
+                          </a>
+
+                          <a href="AltKatKitablar0cfe.html?AltKatID=25&amp;KatID=4" class="AltKatAdi">
+                            <h1>Klinik tibb</h1>
+                          </a>
+
+                          <a href="AltKatKitablar1143.html?AltKatID=26&amp;KatID=4" class="AltKatAdi">
+                            <h1>Daxili xəstəliklər</h1>
+                          </a>
+
+                          <a href="AltKatKitablarbc2e.html?AltKatID=27&amp;KatID=4" class="AltKatAdi">
+                            <h1>Yoluxucu və parazit xəstəliklər</h1>
+                          </a>
+
+                          <a href="AltKatKitablarf77c.html?AltKatID=28&amp;KatID=4" class="AltKatAdi">
+                            <h1>Nevropatologiya (sinir sistemi xəstəlikləri) Neyrocərrahlıq</h1>
+                          </a>
+
+                          <a href="AltKatKitablar9f6d.html?AltKatID=29&amp;KatID=4" class="AltKatAdi">
+                            <h1>Ginekologiya (qadın xəstəlikləri) Ana və uşaqların mühafizəsi</h1>
+                          </a>
+
+                          <a href="AltKatKitablar2b07.html?AltKatID=30&amp;KatID=4" class="AltKatAdi">
+                            <h1>Tətbiqi tibb sahələr</h1>
+                          </a>
+
+                        </div>
+
+
+                        <a href='javascript:show(5)' style="text-decoration: none">
+                          <h2 class="menuheader expandable">
+                            İctimai və humanitar elmlər
+                          </h2>
+                        </a>
+                        <div
+                          style="width: 200px; border-bottom-style: dashed; border-bottom-color: #FFFFFF;  margin-left: 5px; border-bottom-width: 1px; padding-right: 0px; padding-left: 0px; margin-right: 5px;">
+                        </div>
+                        <div id='5' class="menushka">
+
+                          <a href="AltKatKitablard1bb.html?AltKatID=31&amp;KatID=5" class="AltKatAdi">
+                            <h1>İctimai elmlər bütövlükdə </h1>
+                          </a>
+
+                          <a href="AltKatKitablaraa76.html?AltKatID=32&amp;KatID=5" class="AltKatAdi">
+                            <h1>Tarix. Tarix elmləri </h1>
+                          </a>
+
+                          <a href="AltKatKitablar119f.html?AltKatID=33&amp;KatID=5" class="AltKatAdi">
+                            <h1>İqtisadiyyat. İqtisadiyyat elmləri </h1>
+                          </a>
+
+                          <a href="AltKatKitablar3f07.html?AltKatID=34&amp;KatID=5" class="AltKatAdi">
+                            <h1>Siyasət. Siyasi elmlər</h1>
+                          </a>
+
+                          <a href="AltKatKitablara5ed.html?AltKatID=35&amp;KatID=5" class="AltKatAdi">
+                            <h1>Dövlət və hüquq. Hüquq elmləri </h1>
+                          </a>
+
+                          <a href="AltKatKitablarb111.html?AltKatID=36&amp;KatID=5" class="AltKatAdi">
+                            <h1>Hərbi elm. Hərbi iş </h1>
+                          </a>
+
+                        </div>
+
+
+                        <a href='javascript:show(6)' style="text-decoration: none">
+                          <h2 class="menuheader expandable">
+                            Mədəniyyət. Elm. Maarif
+                          </h2>
+                        </a>
+                        <div
+                          style="width: 200px; border-bottom-style: dashed; border-bottom-color: #FFFFFF;  margin-left: 5px; border-bottom-width: 1px; padding-right: 0px; padding-left: 0px; margin-right: 5px;">
+                        </div>
+                        <div id='6' class="menushka">
+
+                          <a href="AltKatKitablar99ea.html?AltKatID=37&amp;KatID=6" class="AltKatAdi">
+                            <h1>Mədəniyyət. Mədəni quruculuq</h1>
+                          </a>
+
+                          <a href="AltKatKitablar421d.html?AltKatID=38&amp;KatID=6" class="AltKatAdi">
+                            <h1>Elm. Elmşünaslıq</h1>
+                          </a>
+
+                          <a href="AltKatKitablar6ee3.html?AltKatID=39&amp;KatID=6" class="AltKatAdi">
+                            <h1>İnformasiya</h1>
+                          </a>
+
+                          <a href="AltKatKitablar7eee.html?AltKatID=40&amp;KatID=6" class="AltKatAdi">
+                            <h1>Xalq maarifi. Pedoqoji elmlər</h1>
+                          </a>
+
+                          <a href="AltKatKitablara218.html?AltKatID=41&amp;KatID=6" class="AltKatAdi">
+                            <h1>B/tərbiyəsi və idman</h1>
+                          </a>
+
+                          <a href="AltKatKitablarf388.html?AltKatID=42&amp;KatID=6" class="AltKatAdi">
+                            <h1>Kütləvi informasiya və təbliğat vasitələri</h1>
+                          </a>
+
+                          <a href="AltKatKitablarf500.html?AltKatID=43&amp;KatID=6" class="AltKatAdi">
+                            <h1>Kitabxana işi.Kitabxanaşünaslıq. Biblioqrafiya. Biblioqrafiyaşünaslıq</h1>
+                          </a>
+
+                          <a href="AltKatKitablara652.html?AltKatID=44&amp;KatID=6" class="AltKatAdi">
+                            <h1>Muzey işi. Arxiv işi</h1>
+                          </a>
+
+                        </div>
+
+
+                        <a href='javascript:show(7)' style="text-decoration: none">
+                          <h2 class="menuheader expandable">
+                            Filologiya. Bədii ədəbiyyat
+                          </h2>
+                        </a>
+                        <div
+                          style="width: 200px; border-bottom-style: dashed; border-bottom-color: #FFFFFF;  margin-left: 5px; border-bottom-width: 1px; padding-right: 0px; padding-left: 0px; margin-right: 5px;">
+                        </div>
+                        <div id='7' class="menushka">
+
+                          <a href="AltKatKitablarc4c9.html?AltKatID=45&amp;KatID=7" class="AltKatAdi">
+                            <h1>Filologiya elmləri bütövlükdə</h1>
+                          </a>
+
+                          <a href="AltKatKitablar6c9e.html?AltKatID=46&amp;KatID=7" class="AltKatAdi">
+                            <h1>Dilçilik</h1>
+                          </a>
+
+                          <a href="AltKatKitablar23e6.html?AltKatID=47&amp;KatID=7" class="AltKatAdi">
+                            <h1>Folklor. Folklor elmləri</h1>
+                          </a>
+
+                          <a href="AltKatKitablarec4d.html?AltKatID=48&amp;KatID=7" class="AltKatAdi">
+                            <h1>Ədəbiyyatşünaslıq</h1>
+                          </a>
+
+                          <a href="AltKatKitablar6c02.html?AltKatID=49&amp;KatID=7" class="AltKatAdi">
+                            <h1>Bədii ədəbiyyat</h1>
+                          </a>
+
+                          <a href="AltKatKitablar5ea0.html?AltKatID=50&amp;KatID=7" class="AltKatAdi">
+                            <h1>İncəsənət</h1>
+                          </a>
+
+                          <a href="AltKatKitablarba80.html?AltKatID=51&amp;KatID=7" class="AltKatAdi">
+                            <h1>Din</h1>
+                          </a>
+
+                          <a href="AltKatKitablar5e8c.html?AltKatID=52&amp;KatID=7" class="AltKatAdi">
+                            <h1>Fəlsəfə elmləri</h1>
+                          </a>
+
+                          <a href="AltKatKitablard7c0.html?AltKatID=53&amp;KatID=7" class="AltKatAdi">
+                            <h1>Psixologiya</h1>
+                          </a>
+
+                        </div>
+
+
+                        <a href='javascript:show(9)' style="text-decoration: none">
+                          <h2 class="menuheader expandable">
+                            Biblioqrafik Vəsaitlər. Məlumat nəşrləri. Jurnallar
+                          </h2>
+                        </a>
+                        <div
+                          style="width: 200px; border-bottom-style: dashed; border-bottom-color: #FFFFFF;  margin-left: 5px; border-bottom-width: 1px; padding-right: 0px; padding-left: 0px; margin-right: 5px;">
+                        </div>
+                        <div id='9' class="menushka">
+
+                          <a href="AltKatKitablaraf5e.html?AltKatID=57&amp;KatID=9" class="AltKatAdi">
+                            <h1>Biblioqrafik vəsaitlər (göstəricilər, siyahılar, xülasələr)</h1>
+                          </a>
+
+                          <a href="AltKatKitablarb165.html?AltKatID=58&amp;KatID=9" class="AltKatAdi">
+                            <h1>Məlumat nəşrləri</h1>
+                          </a>
+
+                          <a href="AltKatKitablard058.html?AltKatID=59&amp;KatID=9" class="AltKatAdi">
+                            <h1>Jurnallar</h1>
+                          </a>
+
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="QezetBasliq"></div>
+                      <a href="QezetAdlari.html" style="text-decoration: none">
+                        <div class="Jurnal"
+                          style="background-color: #0d8aff; border-bottom-style: dashed; border-bottom-width: 1px; height: 19px;">
+                          Qəzetlər
+                        </div>
+                      </a>
+                      <a href="JurnalAdlari.html" style="text-decoration: none">
+                        <div class="Jurnal"
+                          style="background-color: #0d8aff; border-bottom-style: dashed; border-bottom-width: 1px;">
+                          Jurnallar
+                        </div>
+                      </a>
+                      <a href="EnCoxOxunanlar.html" style="text-decoration: none">
+                        <div class="Jurnal"
+                          style="background-color: #0d8aff; border-bottom-style: dashed; border-bottom-width: 1px;">
+                          Ən çox oxunan kitablar
+                        </div>
+                      </a>
+
+                    </div>
+
+                    <div class="sort">
+
+                      <br />
+                      <table class="style7">
+                        <tr>
+                          <td class="SehifeBasliq">
+                            Yeni kitablar
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="SehifeBasliq">
+                            <hr class="hrclass" />
+                          </td>
+                        </tr>
+                      </table>
+                      <td>
+                        <table id="ctl00_ContentPlaceHolder1_dtKitablar" cellspacing="0" border="0"
+                          style="width:100%;border-collapse:collapse;">
+                          <tr>
+                            <td>
+                              <table class="style7">
+                                <tr>
+                                  <td class="style8" valign="top">
+                                    <img width="100px"
+                                      src="data:image/jpeg;base64,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" />
+                                  </td>
+                                  <td>
+                                    <table class="style1">
+                                      <tr>
+                                        <td class="style10">
+                                          <b> Müəllifi: </b>Qardaşov Əliqulu
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <b>Kitabın&nbsp;Adı:&nbsp;</b><a href="KitabEtraflie9f3.html?id=22830"
+                                            class="EtrafliAxtaris">Demokratik Respublika dövründə Azərbaycan mətbuatında
+                                            islam mövzusu&nbsp;</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <a href="KitabEtraflie9f3.html?id=22830" class="EtrafliAxtaris">Ətraflı</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          &nbsp;</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="style10"> </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <hr />
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="style7">
+                                <tr>
+                                  <td class="style8" valign="top">
+                                    <img width="100px" src="Books/img/22899.jpg" />
+                                  </td>
+                                  <td>
+                                    <table class="style1">
+                                      <tr>
+                                        <td class="style10">
+                                          <b> Müəllifi: </b>Sultanova Nilüfər
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <b>Kitabın&nbsp;Adı:&nbsp;</b><a href="KitabEtrafli525d.html?id=22899"
+                                            class="EtrafliAxtaris">Musiqi və musiqinin tədrisi metodikası&nbsp;</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <a href="KitabEtrafli525d.html?id=22899" class="EtrafliAxtaris">Ətraflı</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          &nbsp;</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="style10"> </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <hr />
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="style7">
+                                <tr>
+                                  <td class="style8" valign="top">
+                                    <img width="100px" src="Books/img/22900.jpg" />
+                                  </td>
+                                  <td>
+                                    <table class="style1">
+                                      <tr>
+                                        <td class="style10">
+                                          <b> Müəllifi: </b>Mir Cəlal, Hüseynov Firidun
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <b>Kitabın&nbsp;Adı:&nbsp;</b><a href="KitabEtraflie085.html?id=22900"
+                                            class="EtrafliAxtaris">XX əsr Azərbaycan ədəbiyyatı&nbsp;</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <a href="KitabEtraflie085.html?id=22900" class="EtrafliAxtaris">Ətraflı</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          &nbsp;</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="style10"> </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <hr />
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="style7">
+                                <tr>
+                                  <td class="style8" valign="top">
+                                    <img width="100px" src="Books/img/22901.jpg" />
+                                  </td>
+                                  <td>
+                                    <table class="style1">
+                                      <tr>
+                                        <td class="style10">
+                                          <b> Müəllifi: </b>Quliyev E.M., Əlizadə Ə.Ə., Əlizadə Ə.Ə.
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <b>Kitabın&nbsp;Adı:&nbsp;</b><a href="KitabEtrafli9a53.html?id=22901"
+                                            class="EtrafliAxtaris">Yaş və pedaqoji psixologiya&nbsp;II cild</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <a href="KitabEtrafli9a53.html?id=22901" class="EtrafliAxtaris">Ətraflı</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          &nbsp;</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="style10"> </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <hr />
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="style7">
+                                <tr>
+                                  <td class="style8" valign="top">
+                                    <img width="100px"
+                                      src="https://static.insales-cdn.com/images/products/1/3800/394407640/2021-01-10-18-27-041610288824.jpeg" />
+                                  </td>
+                                  <td>
+                                    <table class="style1">
+                                      <tr>
+                                        <td class="style10">
+                                          <b> Müəllifi: </b>Nuriyev C.Q.
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <b>Kitabın&nbsp;Adı:&nbsp;</b><a href="KitabEtrafli15bd.html?id=22903"
+                                            class="EtrafliAxtaris">Beynəlxalq iqtisadi əlaqələrin hüquqi
+                                            tənzimlənməsi&nbsp;</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <a href="KitabEtrafli15bd.html?id=22903" class="EtrafliAxtaris">Ətraflı</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          &nbsp;</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="style10"> </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <hr />
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="style7">
+                                <tr>
+                                  <td class="style8" valign="top">
+                                    <img width="100px"
+                                      src="https://azertag.az/files/galleryphoto/2021/3/1200x630/16404214005866847441_1200x630.jpg" />
+                                  </td>
+                                  <td>
+                                    <table class="style1">
+                                      <tr>
+                                        <td class="style10">
+                                          <b> Müəllifi: </b>Əliyev İlham
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <b>Kitabın&nbsp;Adı:&nbsp;</b><a href="KitabEtrafli7632.html?id=22913"
+                                            class="EtrafliAxtaris">Naxçıvan bölgəsi səfəvilər dövründə.&nbsp;</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <a href="KitabEtrafli7632.html?id=22913" class="EtrafliAxtaris">Ətraflı</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          &nbsp;</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="style10"> </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <hr />
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="style7">
+                                <tr>
+                                  <td class="style8" valign="top">
+                                    <img width="100px" src="Books/img/22914.jpg" />
+                                  </td>
+                                  <td>
+                                    <table class="style1">
+                                      <tr>
+                                        <td class="style10">
+                                          <b> Müəllifi: </b>Novruzov Zaleh
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <b>Kitabın&nbsp;Adı:&nbsp;</b><a href="KitabEtrafli25c8.html?id=22914"
+                                            class="EtrafliAxtaris">2010-2018-ci illərdə arxeoloji tapıntılar&nbsp;</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <a href="KitabEtrafli25c8.html?id=22914" class="EtrafliAxtaris">Ətraflı</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          &nbsp;</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="style10"> </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <hr />
+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <table class="style7">
+                                <tr>
+                                  <td class="style8" valign="top">
+                                    <img width="100px"
+                                      src="https://www.muallim.edu.az/photos/naxcivankitab5oktyabr2020_1601923748.JPG" />
+                                  </td>
+                                  <td>
+                                    <table class="style1">
+                                      <tr>
+                                        <td class="style10">
+                                          <b> Müəllifi: </b>Əliyev İlham
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <b>Kitabın&nbsp;Adı:&nbsp;</b><a href="KitabEtrafli392d.html?id=22915"
+                                            class="EtrafliAxtaris">Səfəvi, Əfşar, Rusiya və Osmanlı dövlətilərinin
+                                            Azərbaycan siyasətində Naxçıvan (XVIII əsrin I yarısı)&nbsp;</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          <a href="KitabEtrafli392d.html?id=22915" class="EtrafliAxtaris">Ətraflı</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="style10">
+                                          &nbsp;</td>
+                                      </tr>
+
+                                      <tr>
+                                        <td class="style10"> </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <hr />
+
+                            </td>
+                          </tr>
+                        </table>
+
+                      </td>
+                      </tr>
+                      </table>
+
+
+
+                    </div>
+                  </li>
+                </ul>
+                <div class="banners">
+                  <ul>
+                    <a href="http://www.nakhchivan.az/" target="_blank">
+                      <li class="nakhchivan"></li>
+                    </a>
+                    <a href="http://www.e-merkez.alimeclis.az/" target="_blank">
+                      <li class="alimeclis"></li>
+                    </a>
+                    <a href="http://e-kitab.nakhchivan.az/" target="_blank">
+                      <li class="e-kitab"></li>
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!--   333333333333333 -->
+          </div>
+        </div>
+
+
+        <div class="footbox">
+          <div class="copyright">
+            <a href="http://ndu.edu.az/" target="_blank">B&uuml;t&uuml;n h&uuml;quqlar qorunur</a> &copy; 2013
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- en cox oxunan kitablar JS -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2500); // Change image every 2 seconds
+    }
+
+  </script>
+  <!-- en cox oxunan kitablar JS end  -->
+</body>
+
+</html>

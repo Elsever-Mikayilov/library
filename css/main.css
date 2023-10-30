@@ -1,0 +1,743 @@
+﻿
+@import url('tools.html');
+@import url('blocks.html');
+@import url('base.html');
+@import url('engine.html');
+
+a { outline: none; }
+
+
+/*h1-h6*/
+dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset {
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4, h5, 
+
+h1, h2, 
+
+h1, h2, h3, h4, h5, 
+
+h1, h2, h3, h4, h5, 
+
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, table, font {
+	font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+    : 0 0 0.2em 0;
+	line-height: 1.1em;
+}
+
+/*Íàñòðîéêà çàãîëîâêîâ*/
+h1 { font-size: 14px; font-weight:bold; }
+h2 { font-size: 12px; font-weight: bold; line-height:18px; }
+h3 { font-size: 1em; font-weight:bold; line-height:18px; }
+h4 { font-size: 10px; font-weight:bold; line-height:18px; }
+
+/*forms*/
+input, textarea, select {
+	font-size: 1em;
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+    margin-left: 0px;
+    margin-bottom: 3px;
+    margin-right: 0px;
+}
+
+body {
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 16px;
+}
+
+.pagebg {
+	padding: 0; 
+	margin: 0;
+	background-color: #c9e6ff;
+	height:auto;
+}
+
+div.pagebg { padding-top: 15px; /*background: transparent url("../images/pagebg2.png") no-repeat center top;*/ } 
+
+/*Other*/
+p { margin-bottom: 4px; }
+.clr { clear: both; }
+img  { border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    }
+img.left { float: left; margin: 2px 20px 16px 0; }
+img.right { float: right; margin: 2px 0 16px 20px; }
+hr	{ height: -16px; 
+bord
+hr	{ height: 0px; 
+border-top: 1px solid #cfcfcf;
+    width: 669px;
+    border-left-style: none;
+    border-left-color: inherit;
+    border-left-width: 0;
+    border-right-style: none;
+    border-right-color: inherit;
+    border-right-width: 0;
+    border-bottom-style: none;
+    border-bottom-color: inherit;
+    border-bottom-width: 0;
+    margin-left: 0px;
+}
+
+: none;
+    border-color: inherit;
+    border-width: 0px;
+    border-collapse: collapse;
+	border-spacing: 0; margin-right: 16px;
+    margin-left: 0px;
+    }
+
+td { padding: 0px; }
+
+/*UL, LI*/
+ul {
+    margin: 0;
+    padding-left: 0px;
+    list-style-position:outside;
+    list-style-image:none;
+}
+
+ul li { margin: 0; padding: 0; }
+
+ol {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: decimal;
+	margin-bottom: 18px;
+	font-family: Segoe UI;
+	font-size: 13px;
+}
+
+.wrapper {
+	margin:30px auto 0 auto;
+	width: 1024px;
+	text-align: left;
+    height:auto;
+    z-index: 999;
+}
+
+.wrapper_content 
+{
+	margin:0 auto 0 auto;
+	width: 1024px;
+	text-align: left;
+    height:auto;
+    -webkit-box-shadow: 0px 9px 10px rgba(50, 50, 50, 0.32);
+    -moz-box-shadow:    0px 9px 10px rgba(50, 50, 50, 0.32);
+    box-shadow:         0px 9px 10px rgba(50, 50, 50, 0.32);
+}
+
+.tttopppbar 
+{
+	width: auto; 
+	height: 36px;
+	color: #6b5b51;
+	background: url("../images/tthederdd.png") no-repeat center top transparent;
+	font-size: 0.9em;
+}
+.tttopppbarru 
+{
+	width: auto; height: 39px;
+	padding-left: 136px;
+	padding-right: 18px;
+	line-height: 27px;
+	color: #6b5b51;
+	background: #f0e7dd url("../images/tthederdd2.png") no-repeat left top;
+	font-size: 0.9em;
+}
+.tttopppbaren 
+{
+	width: auto; height: 39px;
+	padding-left: 136px;
+	padding-right: 18px;
+	line-height: 27px;
+	color: #6b5b51;
+	background: #f0e7dd url("../images/tthederdd3.png") no-repeat left top;
+	font-size: 0.9em;
+}
+
+.tttopppbar a { color: #6b5b51; }
+
+.headdate
+{
+    float: right;
+    height: 20px;
+    line-height: 12px;
+    padding-left: 20px;
+    background: transparent url("../images/historyicons.png") no-repeat left -246px;
+    position: relative;
+    top: 13px;
+    left: 0px;
+    margin-right: 15px;
+    color: #2E5FC3;
+}
+
+.head_text 
+{
+    margin: 15px auto 0 auto;
+    width: 645px;
+    font-size: 12pt;
+    font-family: "Times New Roman";
+    line-height: 17px;
+    font-style: italic;
+}
+.tophhhhheader
+{
+    margin-bottom: 5px;
+    background-color: #FFF;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+.www_historylost_ru {
+	width: 78px; height: 78px;
+	background: transparent url("../images/historylost_ru.png") no-repeat left top;
+	float: left;
+	position: absolute;
+	top: -24px;
+	left: 29px;
+}
+
+.www_historylost_ru_text {
+	width: 300px; height: 80px;
+	background: transparent url("../images/historylost_ru.png") no-repeat -80px -14px;
+	position: relative;
+	top: 2px;
+	right: 5px;
+}
+
+.bannerh_historylost {
+	width: 322px; 
+    height: 61px;
+	float: right;
+	position: relative;
+    top: 0px;
+    left: -3px;
+}
+
+.tophdasdmenu, .tophdasdmenu .dleft, .tophdasdmenu .dright { height: 38px; }
+.tophdasdmenu  
+{
+    background: #025dca url("../images/topmeewwqu.png") repeat-x left -108px;
+    width: 1024px;
+}
+.tophdasdmenu .dleft
+  
+{
+    
+}
+.tophdasdmenu .dright { padding-left: 12px;  }
+.tophdasdmenu ul, .tophdasdmenu ul li { list-style: none; background: none; padding: 0; margin: 0; }
+
+.presentation
+{
+    height: 226px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #E5DCD1;
+}
+.serencam 
+{
+    float: right;
+    width: 342px;
+    border: 1px solid #FFF;
+    height: 223px;
+    background: url('../bannerIcons/text.png') no-repeat center #FFF;
+}
+.serencamRu 
+{
+    float: right;
+    width: 342px;
+    border: 1px solid #FFF;
+    height: 223px;
+    background: url('../images/textRu.png') no-repeat center #FFF;
+}
+.serencamEn 
+{
+    float: right;
+    width: 342px;
+    border: 1px solid #FFF;
+    height: 223px;
+    background: url('../images/textEn.png') no-repeat center #FFF;
+}
+
+#coin-slider {
+	float:left;
+	margin:7px;
+	width:669px;
+	height:235px;
+	position: absolute;
+    top: 183px;
+    left: 0px;
+}
+#lastnews
+{
+    width: 320px;
+    height: 222px;
+    line-height: normal;
+    margin: 7px 0 0 687px;
+    color: #000000;
+    padding: 3px;
+    font-size: 11px;
+}
+
+#lastnews b
+{
+    color: #000000;
+    font-weight: bold;
+}
+#lastnews a
+{
+    color: #CC0000;
+}
+
+.toolbbbar {
+	background: #ece3dc url("../images/toolbbbaar.png") no-repeat left top;
+	height: 59px;
+	overflow: hidden;
+}
+
+.toolsmng {
+	float: left;
+	width: 127px; height: 52px;
+	overflow: hidden;
+}
+
+.toolbbbar .dleft { margin-left: 127px; margin-right: 385px; }
+.toolbbbar .dright { float: right; width: 302px; }
+
+.axarish 
+{
+    float: left;
+    width: 460px;
+    height: 38px;
+    line-height: 37px;
+    margin-left: 180px;
+}
+.time 
+{
+    float: right;
+}
+.speedbar {
+	background: #e5dcd1 url("../images/toolbar_bg.png") repeat-x;
+	height: 39px;
+	line-height: 34px;
+	overflow: hidden;
+}
+.speedbar input[type=text] 
+{
+    border: 1px solid #2e5fc3;
+    height: 22px;
+    padding-left: 22px;
+    width: 300px;
+    margin-top: 3px;
+    background: url(../images/mini-search.png) no-repeat 2px #FFF ;
+}
+.speedbar input[type=submit] 
+{
+    background-color: #2e5fc3;
+    height: 26px;
+    width: 35px;
+    border: 1px solid #2e5fc3;
+    margin: 3px 5px 0 3px;
+    color: #FFF;
+    font-style: italic;
+}
+.katalog 
+{
+    float: left;
+    width: 200px;
+    height: 38px;
+    background-color: #053C94;
+    margin-left: 6px;
+    border-left: 1px solid #FFF;
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    font-family: Segoe UI;
+    line-height: 38px;
+}
+
+.mmasdabody_hlost 
+{
+        background: #fff url("../images/mmmsdaasmainbbbody.png") repeat-x left top; 
+      
+ }
+
+.topmmasdabody_hlost {
+	background: transparent url("../images/mmmmainbbbody.png") repeat-y left top;
+	padding-left: 6px;
+
+}
+
+ul.container, li.rightside, li.centerside { list-style: none; background: none; margin: 0; padding: 0; } 
+ul.container { overflow: hidden; display: block; } 
+li.rightside { float: right; width: 270px; }
+
+.centersideinn { overflow: hidden; }
+
+.tagsbox { background-color: #fff; padding-bottom: 10px; }
+.tagsbox h3 {
+	height: 30px;
+	line-height: 100px;
+	overflow: hidden;
+	background: #655954 url("../images/tagsbox.png") no-repeat left top;
+	margin-bottom: 5px;
+}
+
+.qezetler li
+{
+    list-style: none;
+    float: left;
+}
+
+.tagsbox, .tagsbox a { color: #c9bbb2; }
+
+.bannerfootbox {
+	padding: 8px 0;
+	text-align: center;
+	background: #f9f6f1 url("../images/bannerfootbox.png") repeat-x left top;
+}
+
+.banners 
+{
+    height: 160px;
+    width: 915px;
+    margin: 5px auto 0 auto;
+}
+.banners li 
+{
+    float: left;
+    display: inline-block;
+    list-style: none;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+.banners li a 
+{
+    font-size: 13px;
+    display: block;
+    height: 10px;
+    margin-top: 122px;
+    color: #FFF;
+    text-decoration: none;
+}
+.nakhchivan 
+{
+    width: 300px;
+    height: 150px;
+    background: url(../bannerIcons/banners/1.png) no-repeat;
+}
+.alimeclis 
+{
+    width: 300px;
+    height: 150px;
+    background: url(../bannerIcons/banners/2.png) no-repeat;
+}
+.e-kitab 
+{
+    width: 300px;
+    height: 150px;
+    background: url(../bannerIcons/banners/3.png) no-repeat;
+}
+
+.footbox {
+	background: #f9f6f1 url("../images/foo0ooterrrreere.png") no-repeat left top;
+	height: 56px;
+	line-height: 50px;
+	margin-bottom: 20px;
+}
+
+.footer {
+	background: #e7ddd2 url("../images/foo0ooterrrreere.png") no-repeat left -56px;
+	height: 86px;
+}
+
+.foothistorylost img { margin-left: 15px; position: relative; top: 14px; }
+
+.copyright, .copyright a { color: #655954; }
+.copyright {
+	margin-left: 20px;
+	white-space: nowrap;
+}
+
+.centroarts img {
+	float: right;
+	margin: 25px 50px;
+	width: 100px; height: 22px;
+	background: url("../images/centroarts.html") no-repeat 0 0;
+}
+
+.centroarts:hover img {
+	background-position: 0 -22px;
+}
+
+div.count {
+	float: right;
+	position: relative;
+	top: 12px;
+	text-align: center;
+	width: 308px;
+	line-height: 0;
+}.pagebg .pagebg .wrapper .mmasdabody_hlost .topmmasdabody_hlost .container .rightside .blockpad .blocktype1 {
+	float: left;
+}
+.pagebg .pagebg .wrapper .mmasdabody_hlost .topmmasdabody_hlost .container .rightside .blockpad .blocktype1 {
+	float: left;
+}
+.pagebg .pagebg .wrapper .mmasdabody_hlost .topmmasdabody_hlost .container .rightside .blocktype2 {
+	background-color: #523427;
+}
+.pagebg .pagebg .wrapper .mmasdabody_hlost .topmmasdabody_hlost .container .rightside .blocktype2 {
+	background-color: #3B1D10;
+}
+.umumi {
+	width: 1024px;
+	height:auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #EEE5DA;
+}
+.pagebg .wrapper .presentation {
+	background-image: url(../images/_banner_.gif);
+}
+.pagebg .wrapper .presentation
+{
+    background-image: url('../images/presentation.jpg');
+}
+.pagebg .wrapper .kategoriya {
+	float: left;
+	height: auto;
+	width: 250px;
+}
+.pagebg .wrapper .kategoriya {
+	background-color: #FFF;
+}
+
+.pagebg .umumi .blocktype1 {
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.pagebg .umumi .blocktype1 {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.kateqoriya
+{
+    float: left;
+    height: auto;
+    width: 250px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: #FFFFFF;
+}
+.login
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+.login {
+	float: right;
+	height:auto;
+	width: 250px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.LoginText
+{
+    width: 220px;
+}
+.pagebg .umumi .footer {
+	clear: both;
+}
+.pagebg .umumi .footer {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.icerik {
+	height: auto;
+	width: 750px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	float: left
+}
+.soz
+{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: #FFFFCC;
+    color: #2B0000;
+    width: 1024px;
+    height: 23px;
+}
+.EtrafliAxtaris
+{
+    color: #CC0000;
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Tahoma;
+}
+.EtrafliAxtaris:hover
+{
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+.EtrafliAxtaris:hover
+{
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+.menyuozu
+{
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color: #0d8aff;
+    margin-top: 0;
+    margin-right: 7px;
+    margin-left: 1px;
+}
+
+.lang {
+	float:right;
+	width:69px;
+	height:14px;
+	margin:10px 25px 0 16px;
+	border:1px solid #0268e3;
+	background-color: #025dca;
+	z-index: 9;
+	position: absolute;
+}
+
+.EtrafliAxtaris
+{
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #2E5FC3;
+    text-decoration: none;
+}
+
+.EtrafliAxtaris:hover
+{
+    color: #1e68fe;
+}
+.SehifeBasliq
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    font-variant: inherit;
+    color: #053C94;
+}
+
+.KatBasliq
+{
+    padding: 7px 0px 2px 2px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 97%;
+    height: 20px;
+    margin: 5px 0px 2px 2px;
+    background-color: #9E876E;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+.QezetBasliq
+{
+    padding: 7px 0px 2px 0px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: #f9f6f1;
+    font-weight: bold;
+    width: 100%;
+    height: 10px;
+    margin: 5px 0px 2px 0px;
+    background-color: #f9f6f1;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+.HerfBasliq
+{
+    font-family: Tahoma;
+    font-size: 18px;
+    font-variant: inherit;
+    color: #CC0000;
+}
+.Jurnal
+{
+    width: 189px /*CSS class for menu headers in general (expanding or not!)*/;
+    font: normal 14px Tahoma;
+    color: white; /*bottom spacing between header and rest of content*/
+    text-transform: none;
+    padding: 4px 0 4px 10px; /*header text is indented 10px*/
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #613215;
+    float: left;
+    margin-bottom: 0px;
+}
+
+.Jurnal:hover
+{
+     width:200px;
+  /*CSS class for menu headers in general (expanding or not!)*/
+    margin: 3px;
+    font-family: Tahoma;
+    font-size: 14px;
+    color: #FFFFCC; /*bottom spacing between header and rest of content*/
+    text-transform: none;
+    padding: 4px 0 4px 10px; /*header text is indented 10px*/
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.FaydaliLinkler
+{
+    font-family: Tahoma;
+    color: #333333;
+    font-size: 12px;
+    text-decoration: none;
+}
+.FaydaliLinkler:hover
+{
+    font-family: Tahoma;
+   color: #333333;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.hrclass
+{
+    width: 996%;
+}

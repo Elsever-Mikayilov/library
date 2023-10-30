@@ -1,0 +1,369 @@
+/*author: Rumin Sergey*/
+/*Copyright: CENTROARTS.com*/
+/*e-mail: info@centroarts.com, centroarts@mail.ru*/
+/*URL: http://www.centroarts.com*/
+
+.tophdasdmenu ul.topmenu  
+{
+    height: 35px; 
+    display: block; 
+    padding-left: 2px; 
+    background: transparent url("../images/topmeewwqu.png") no-repeat left -252px;
+    width: 700px;
+    font-family: Segoe UI;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+
+.tophdasdmenu ul.topmenu li { float: left; }
+ul.topmenu li a, ul.topmenu li a strong { float: left; height: 35px; }
+ul.topmenu li a {
+	color: #FFF;
+	line-height: 35px;
+	text-decoration: none !important;
+}
+
+ul.topmenu .mm {
+	cursor: pointer;
+	background: transparent url("../images/topmeewwqu.png") no-repeat right -207px;
+	padding: 0 16px 0 14px;
+	font-style: italic;
+}
+
+ul.topmenu li a:hover { color: #fff; background: #5b2f27 url("../images/topmeewwqu.png") repeat-x left -162px; }
+
+ul.topmenu li.selected a { background: #5b2f27 url("../images/topmeewwqu.png") repeat-x left -162px; }
+
+.tophdasdmenu ul.sublinks
+{
+    position: absolute;
+    top: 0;
+    border: 1px solid #a16e5c;
+    border-width: 0 1px;
+    z-index: 100;
+    background-color: #05429c;
+    width: 200px;
+    visibility: hidden;
+    filter: alpha(opacity=95);
+    -moz-opacity: 0.95;
+    -khtml-opacity: 0.95;
+    opacity: 0.95;
+    color: #FFF;
+    font-style: italic;
+}
+
+ul.sublinks a {
+	width: auto;
+	display: block;
+	text-indent: 12px;
+	/*font-weight: bold;*/
+	border-bottom: 1px solid #0062f2;
+	padding: 5px 0;
+	text-decoration: none;
+	color: #FFF;
+}
+
+* html .sublinks a { width: 100%; }
+
+.sublinks a:hover {
+	background-color: #054cb4;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*PRESENT*/
+/*PRESENT HEAD*/
+.sliderwrapper {
+	position: relative;
+	overflow: hidden;
+	width: 577px; height: 173px;
+	top: 18px;
+}
+
+.sliderwrapper .contentdiv {
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 577px; height: 173px;
+	filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+	color: #fff;
+}
+
+.pagination {
+	height: 24px;
+	padding-left: 6px;
+}
+
+.pagination a img { width: 56px; height: 24px; float: left; }
+
+.pagination .next img { background: transparent url("../images/historyicons.png") no-repeat -56px -510px; }
+.pagination .prev img { background: transparent url("../images/historyicons.png") no-repeat 0 -510px; }
+
+.pagination .next:hover img { background: transparent url("../images/historyicons.png") no-repeat -56px -535px; }
+.pagination .prev:hover img { background: transparent url("../images/historyicons.png") no-repeat 0 -535px; }
+
+/*===SEARCH & LOGIN===*/
+ul.loginbox, ul.loginbox li, ul.searchbox, ul.searchbox li { list-style: none; margin: 0; padding: 0; }
+
+.searchbox { position: relative; top: 6px; }
+.searchbox { width: 300px; }
+.searchbox li {
+	width: 197px;
+	float: left;
+}
+.searchbox li.submit { width: 74px; }
+
+.searchbox li .lfield {
+	width: 195px; height: 21px;
+	margin-bottom: 2px;
+	background: #837470 url("../images/fieldtext.png") no-repeat left -42px;
+}
+
+.searchbox li .lfield img { width: 37px; height: 21px; float: left; background: #837470 url("../images/fieldtext.png") no-repeat left -42px; }
+
+.searchbox .lfield div { padding-left: 4px; padding-top: 3px; }
+
+.searchbox .lfield input {
+	float: left;
+	width: 154px;
+	padding: 0;
+	background: none;
+	border: none;
+	color: #ffffff;
+}
+
+.searchbox .btn,
+.searchbox .btnhover { width: 74px; height: 24px; position: relative; top: -1px; }
+.searchbox .btn { background: transparent url("../images/historyicons.png") no-repeat left -19px; }
+.searchbox .btnhover { background: transparent url("../images/historyicons.png") no-repeat -75px -19px; }
+.searsh_mess { color: #f02000; text-align: center; font-weight: bold; }
+
+/**/
+.loginform { padding-top: 6px; }
+
+.loginbox { width: 450px; }
+.loginbox li {
+	width: 160px;
+	float: left;
+}
+.loginbox li.submit { width: 74px; }
+
+.loginbox li .lfield {
+	width: 156px; height: 21px;
+	margin-bottom: 2px;
+	background: #837470 url("../images/fieldtext.png") no-repeat left top;
+}
+
+.loginbox .logform_pass, .logform_login { width: 41px; height: 21px; float: left; background: #837470 url("../images/fieldtext.png") no-repeat left -21px; }
+.loginbox .logform_login { background: #837470 url("../images/fieldtext.png") no-repeat left 0; }
+
+.loginbox .lfield div { padding-left: 4px; padding-top: 3px; }
+
+.loginbox .lfield input {
+	float: left;
+	width: 110px;
+	padding: 0;
+	background: none;
+	border: none;
+	color: #ffffff;
+}
+
+.loginbox .btn,
+.loginbox .btnhover { width: 74px; height: 24px; position: relative; top: -1px; }
+.loginbox .btn { background: transparent url("../images/historyicons.png") no-repeat left -44px; }
+.loginbox .btnhover { background: transparent url("../images/historyicons.png") no-repeat -75px -44px; }
+
+.loginform a { text-decoration: none !important; }
+
+/*LOGINDATE*/
+.loginboxdate { padding-top: 4px; line-height: 14px; }
+
+ul.colomn, ul.colomn li { margin: 0; padding: 0; list-style: none; }
+ul.colomn { float: left; width: 33%; }
+ul.colomn li { width: 100%; }
+.loginboxdate ul.colomn li { clear: both; font-size: 0.9em; }
+.loginboxdate ul.colomn li img { vertical-align: middle; margin-right: 4px; }
+
+/*TREEMENU*/
+.treeview, .treeview ul, .treeview li { margin: 0; padding: 0; list-style-type: none; }
+
+.treeview li { background: transparent url("../images/dotted_white.gif") repeat-x left bottom; }
+.treeview li.submenu { background: none; }
+.treeview li.submenu div { width: 100%; background: transparent url("../images/dotted_white.gif") repeat-x left bottom; }
+.treeview li a, .treeview li span { color: #ede4d8; padding: 5px 0; padding-left: 22px; display: block; }
+.treeview li span { width: 100%; padding: 5px 0; text-indent: 22px; }
+
+.treeview li a { background: transparent url("../images/list.gif") no-repeat left center; }
+.treeview li.submenu span {
+	background: transparent url("../images/closed.gif") no-repeat left center;
+	cursor: pointer !important;
+}
+.treeview li.submenu span a { padding: 0; display: inline; background: none; }
+.treeview li.openfolder span { background: transparent url("../images/closed.gif") no-repeat left center; }
+.treeview li.closefolder span { background: transparent url("../images/open.gif") no-repeat left center; }
+
+.treeview li.submenu ul { display: none; }
+.treeview li.submenu ul li { padding-left: 20px; }
+.treeview li.submenu ul li a { color: #ff8400; }
+
+.treeview .submenu ul li { cursor: default; }
+
+/*USERINFO TABSSS*/
+.userinfo .shadetabs, .userinfo .shadetabs li { padding: 0; margin: 0; list-style: none; background: none; }
+
+.userinfo .shadetabs {
+	display: block;
+	height: 27px;
+	padding-left: 16px;
+	overflow: hidden;
+	background: transparent url("../images/shadetabs_bg.png") repeat-x right top;
+}
+.userinfo .shadetabs li { float: left; }
+
+.userinfo .shadetabs li a {
+	float: left;
+	width: 146px; height: 27px;
+	line-height: 29px;
+	text-decoration: none !important;
+	color: #f9f6f1;
+	background: #bcb4ae url("../images/userinfo_tabs.png") no-repeat right -27px;
+	text-align: center;
+}
+
+.userinfo .shadetabs li a.selected { line-height: 27px; color: #c9553f; background: #f2f2f1 url("../images/userinfo_tabs.png") no-repeat right top; }
+
+.userinfo .tabcontent{ display: none; padding: 10px 0; }
+
+@media print {
+.userinfo .tabcontent {
+display:block !important;
+}
+}
+
+.userinfo .shadetabscont {
+	background-color: #fafaf9;
+	border-bottom: 1px solid #e3e0db;
+}
+
+/*ICONS*/
+a.rsshead img {
+	float: right;
+	position: relative;
+	top: 10px;
+	margin: 0 10px;
+	width: 18px; height: 18px;
+	background: transparent url("../images/historyicons.png") no-repeat 0 0;
+}
+
+a.rsshead:hover img { background: transparent url("../images/historyicons.png") no-repeat -19px 0; }
+
+.hhhembtn { text-align: center; padding-top: 4px; }
+.hhhembtn span { padding: 0 5px; }
+.hhhembtn img { width: 16px; height: 16px; }
+
+a.bbttnhome1 img { background: transparent url("../images/historyicons.png") no-repeat 2px -98px; }
+a.bbttnhome2 img { background: transparent url("../images/historyicons.png") no-repeat -29px -98px; }
+a.bbttnhome3 img { background: transparent url("../images/historyicons.png") no-repeat -59px -98px; }
+
+a.bbttnhome1:hover img { background: transparent url("../images/historyicons.png") no-repeat 2px -266px; }
+a.bbttnhome2:hover img { background: transparent url("../images/historyicons.png") no-repeat -29px -266px; }
+a.bbttnhome3:hover img { background: transparent url("../images/historyicons.png") no-repeat -59px -266px; }
+
+/*ICONS & BUTTONS*/
+.votebtn, .votebtnhover,
+.resultbtn, .resultbtnhover { width: 117px; height: 23px; }
+
+.votebtn { background: transparent url("../images/historyicons.png") no-repeat left -297px; }
+.votebtnhover { background: transparent url("../images/historyicons.png") no-repeat left -321px; }
+.resultbtn { background: transparent url("../images/historyicons.png") no-repeat -119px -297px; }
+.resultbtnhover { background: transparent url("../images/historyicons.png") no-repeat -119px -321px; }
+
+.okbtn, .okbtnhover,
+.viewbtn, .viewbtnhover,
+.editbtn, .editbtnhover,
+.svotebtn, .svotebtnhover, 
+.sresultbtn, .sresultbtnhover { width: 115px; height: 21px; }
+.okbtn { background: transparent url("../images/historyicons.png") no-repeat left -347px; }
+.okbtnhover { background: transparent url("../images/historyicons.png") no-repeat -118px -347px; }
+
+.viewbtn { background: transparent url("../images/historyicons.png") no-repeat left -374px; }
+.viewbtnhover { background: transparent url("../images/historyicons.png") no-repeat -118px -374px; }
+
+.editbtn { background: transparent url("../images/historyicons.png") no-repeat left -401px; }
+.editbtnhover { background: transparent url("../images/historyicons.png") no-repeat -118px -401px; }
+
+.svotebtn { background: transparent url("../images/historyicons.png") no-repeat left -455px; }
+.svotebtnhover { background: transparent url("../images/historyicons.png") no-repeat -118px -455px; }
+
+.sresultbtn{ background: transparent url("../images/historyicons.png") no-repeat left -483px; }
+.sresultbtnhover { background: transparent url("../images/historyicons.png") no-repeat -118px -483px; }
+
+.ciedit, .cidel, .category img { vertical-align: middle; margin-right: 3px; }
+.category img { width: 14px; height: 14px; background: transparent url("../images/historyicons.png") no-repeat -91px -99px; }
+
+/*Comment*/
+.ciedit, .cidel { width: 10px; height: 10px; }
+.ciedit { background: transparent url("../images/historyicons.png") no-repeat 0 -588px; }
+.cidel { background: transparent url("../images/historyicons.png") no-repeat -11px -588px; }
+
+.icoreg img, .icolostp img {
+	width: 11px; height: 11px;
+	vertical-align: middle; margin-right: 6px;
+}
+.icoreg img { background: transparent url("../images/historyicons.png") no-repeat 0 -78px; }
+.icolostp img { background: transparent url("../images/historyicons.png") no-repeat -27px -78px; }
+
+.icoreg:hover img { background: transparent url("../images/historyicons.png") no-repeat -57px -78px; }
+.icolostp:hover img { background: transparent url("../images/historyicons.png") no-repeat -83px -78px; }
+
+.si_comm img, .si_date img, .si_views img, .si_author img {
+	width: 14px; height: 14px;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.si_comm img { background: transparent url("../images/historyicons.png") no-repeat 0 -211px; }
+.si_date img { background: transparent url("../images/historyicons.png") no-repeat 2px -227px; }
+.si_views img { background: transparent url("../images/historyicons.png") no-repeat -20px -210px; }
+.si_author img { background: transparent url("../images/historyicons.png") no-repeat -130px -76px; }
+
+.argback img {
+	width: 16px; height: 16px;
+	vertical-align: middle;
+	margin-right: 3px;
+	background: transparent url("../images/historyicons.png") no-repeat -126px -98px;
+}
+
+.ui_email { margin-right: 10px;}
+
+.ui_email img, .ui_pm img { 
+	width: 15px; height: 15px;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.ln_date { color: #975a1b; font-size: 10px; }
+
+.ui_email img { background: transparent url("../images/historyicons.png") no-repeat -109px -76px; }
+.ui_pm img { background: transparent url("../images/historyicons.png") no-repeat -130px -76px; }
+
+.loginboxdate ul.colomn li img { vertical-align: middle; margin-right: 4px; width: 11px; height: 11px; }
+.lf_exit img { background: transparent url("../images/historyicons.png") no-repeat -11px -588px; }
+.lf_admin img { background: transparent url("../images/historyicons.png") no-repeat -63px -573px; }
+.lf_add img { background: transparent url("../images/historyicons.png") no-repeat -24px -573px; }
+.lf_prof img { background: transparent url("../images/historyicons.png") no-repeat -63px -573px; }
+.lf_msg img { background: transparent url("../images/historyicons.png") no-repeat -49px -573px; }
+.lf_tabs img { background: transparent url("../images/historyicons.png") no-repeat -12px -573px; }
+.lf_stat img { background: transparent url("../images/historyicons.png") no-repeat 0 -573px; }
+.lf_nread img { background: transparent url("../images/historyicons.png") no-repeat -36px -573px; }
+
+
+.ciquote img {
+	float: right;
+	width: 29px; height: 23px;
+	background: transparent url("../images/historyicons.png") no-repeat 0 -599px;
+}
